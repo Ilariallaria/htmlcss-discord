@@ -5,7 +5,10 @@
 }
 
 /* COMMON */
+body{
+    font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+}
 .cont{
     width: 70%;
     margin: auto;
@@ -23,6 +26,19 @@ section{
     padding: 30px 0;
 }
 
+.btn{
+    background-color: white;
+    border-radius: 20px;
+    border-width: 0;
+    padding: 7px 7px;
+    font-size: 15px;
+
+}
+
+img{
+    width: 100%;
+    display: block;
+}
 
 /* HEADER */
 
@@ -34,107 +50,229 @@ section{
 
 .top-area{
     color: white;
+    align-items: center;
 }
 
 .logo{
     width: 20%;
-    padding: 10px;
+}
+
+.logo img{
+    width: 120px;
+    height: 30px;
+    justify-self: left;
 }
 
 nav{
     width: 60%;
-    padding: 10px;
 }
 
 .login{
     width: 20%;
-    padding: 10px;
     text-align: right;
-}
-
-.btn{
-    background-color: white;
-    border-radius: 20px;
-    border-width: 1px;
-    padding: 7px 7px;
 }
 
 .t-menu{
     list-style: none;
-    justify-content: space-between;
+    justify-content: center;
+    font-size: 14px;
 }
 
 .t-menu li a{
     text-decoration: none;
     color: inherit;
+    padding: 15px;
 }
 
 /* jumbo */
 
 .jumbo-back{
-background-color: blue;
-height: 450px;
-justify-content: center;
-align-items: center;
+    height: 460px;
+    width: 1317.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#j-back{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
 
 .jumbo-text{
-    background-color: pink;
+    /* background-color: pink; */
+    padding-top: 70px;
     width: 50%;
-    height: 300px;  
+    height: 300px;
+    color: white;
 }
+
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.jumbo-text p{
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.jumbo-text div{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.jumbo-text button{
+    padding: 12px 12px;
+
+}
+
+.btn-black{
+    background-color: black;
+    color: white;
+} */
 
 /* MAIN */
 
 .col-immagine{
-    width: 60%;
-    background-color: lightpink; 
-    height: 400px;  /*togliere*/
+    width: 65%;
 }
 
 .col-testo{
-    width: 40%;
-    background-color: lightblue;    /*togliere*/
-    height: 400px;  /*togliere*/
+    width: 35%;
 }
 
-.big-green{
+.col-testo p{
+    line-height: 25px;
+    padding-top: 20px;
+
+}
+
+h2{
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.big-box{
+    flex-direction: column;
+    align-items: center;
+}
+.big-box .col-testo{
     width: 100%;
-    background-color: green;    /*togliere*/
-    height: 600px;      /*togliere*/
+}
+
+.small-box{
+    /* background-color: pink; */
+    width: 530px;
+    height: 100px;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+} 
+
+.small-box p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 40px;
+
+}
+
+.btn-blue{
+    background-color: #345ee9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+
+.g-big{
+    padding-bottom: 100px;
 
 }
 
 /* FOOTER */
 
-/* top */
-
-.black{
+footer{
     background-color: black;
 }
 
+/* top */
+
 .top-padding{
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 20px;
 
 }
 .f-minor{
     width: 30%;
-    background-color: pink;
+    /* background-color: pink; */
     height: 400px;
 }
 
+.f-minor span{
+    font-size: 30px;
+    font-weight: 750;
+    color: darkblue;
+}
+
+.f-minor-box{
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.f-minor-box img{
+    width: 20px;
+    height: 15px;
+
+}
+
+.f-minor-box a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.f-minor-icons{
+padding-top: 15px;
+}
+
+.f-minor-icons span{
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+
+}
+
+
 .f-major{
     width: 70%;
-    background-color: aqua;
     height: 400px;
 }   
 
 .f-menu{
     width: 25%;
-    border: 1px solid black;
     width: 100%;
-    
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.f-menu span{
+    color: darkblue;
+}
+
+.f-menu ul{
+    list-style: none;
+
+}
+
+.f-menu li a{
+    text-decoration: none;
+    color: white;
+
 }
 
 hr{
@@ -146,21 +284,15 @@ hr{
 /* bottom */
 
 .bottom-padding{
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 0%;
 }
 
 .bottom{
-    background-color: aquamarine;
-    color: black;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .bottom button{
-    border-style: solid;
-    border-width: 1px;
     padding: 7px 7px;
-    margin: 10px 0;
-    border: 1px dotted black
-
 }
